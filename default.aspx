@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="laz.css" />
 
 </head>
 <body>
@@ -35,6 +35,9 @@
         <br /><br />
 
         <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="clearButton" runat="server" Text="Button" />
         
         <br /><br />
                 

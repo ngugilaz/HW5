@@ -80,4 +80,12 @@ Partial Class _Default
 
     End Sub
 
+    Protected Sub clearButton_Click(sender As Object, e As EventArgs) Handles clearButton.Click
+        'to clear users inputs 
+
+        tbLoanAmt.Text = ""
+        tbAnnualInterest.Text = ""
+        tbLoanTerm.Text = ""
+
+    End Sub
 End Class
