@@ -1,8 +1,13 @@
-﻿body {background-color: 7A44E8;
+﻿body {background-color: lightcoral;color:black;
 }
 h1 {font-size:20px; font-style:bold; font-color: black;
 }
-	
+
+.bold {font-weight:bold;font-size:24px;
+}
+
+.cssgrindview {width:auto;margin:5px 0 10px 0;border:solid 1px # 764EFF;
+}
 #footer {
     background-color: B659FF;
 }
