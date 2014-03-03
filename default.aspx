@@ -16,23 +16,25 @@
         
         <br /><br />
      
-        Loan Amount:<asp:TextBox ID="tbLoanAmt" runat="server" ></asp:TextBox>
+        Loan Amount:<asp:TextBox ID="tbLoanAmt" runat="server" >    </asp:TextBox>
                   
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter amount"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please enter amount" ControlToValidate="tbLoanAmt"></asp:RequiredFieldValidator>
                   
         <br /><br />      
         
         Annual Interest %: <asp:TextBox ID="tbAnnualInterest" runat="server" ></asp:TextBox>
         
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please interest rate"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please interest rate" ControlToValidate="tbAnnualInterest"></asp:RequiredFieldValidator>
         
         <br /><br />
 
         Loan Term (Yrs): <asp:TextBox ID="tbLoanTerm" runat="server" ></asp:TextBox>
         
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter the loan term"></asp:RequiredFieldValidator>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter the loan term" ControlToValidate="tbLoanTerm"></asp:RequiredFieldValidator>
         
         <br /><br />
+
+        Monthly Payment &nbsp <asp:Label ID="Label1" runat="server"></asp:Label>
         <table>
             <tr>
                 <td align ="right"& nbsp; ></td> <td align ="left"><asp:Button ID="btnCalcPmt" runat="server" TabIndex="5" Text="Calculate" Width="125px" /></td>
