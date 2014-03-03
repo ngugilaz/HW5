@@ -1,19 +1,24 @@
-﻿body {background-color: lightcoral;color:black;
+﻿
+/* body format --start*/
+body {background-color: lightcoral;color:black;
 }
-h1 {font-size:20px; font-style:bold; font-color: black;
-}
+/* body format --end*/
 
+
+/* custom classes --start*/
 .bold {font-weight:bold;font-size:24px;
 }
 
-.cssgrindview {width:auto;margin:5px 0 10px 0;border:solid 1px # 764EFF;
+/*custom classe --end
+    
+    */
+/*css to format grind view --start*/
+.cssgrindview {width:auto;margin:5px 0 10px 0;border:solid 1px #764EFF;border-collapse:collapse;text-align:center;font-family:'Comic Sans MS';color:#B659FF ;
 }
-#footer {
-    background-color: B659FF;
-}
-
-7A44E8
-
-764EFF
-
-B659FF 
+    .cssgrindview td {padding:10px;border:solid 1px #c1c1c1; color:#7A44E8;
+    }
+    .cssgrindview th {padding:10px;color:00AF64; background:#424242 url(.style/grd_head.png) repeat-x top; border-left:solid 1px #B659FF; font-size:0.9em;
+    }
+    .cssgrindview .alt {background-color:aqua;
+    }
+/*css to format grind view --end*/

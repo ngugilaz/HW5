@@ -33,20 +33,33 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Please enter the loan term"></asp:RequiredFieldValidator>
         
         <br /><br />
+        <table>
+            <tr>
+                <td align ="right"& nbsp; ></td> <td align ="left"><asp:Button ID="btnCalcPmt" runat="server" TabIndex="5" Text="Calculate" Width="125px" /></td>
+            </tr>
+        </table>
+        
+        <br />
+         <br />
 
-        <asp:Button ID="btnCalcPmt" runat="server" Text="Calculate" />
+        &nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="clearButton" runat="server" Text="Clear" Width="127px" />
         
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="clearButton" runat="server" Text="Clear" />
-        
-        <br /><br />
-                
-        Monthly Payment: &nbsp; <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         
         <br /><br />
+         <%If Not IsPostBack Then%>
+        <p> Welcome to my mortgage Calculator. Please complete the fileds above to have your monthly payment and loan repayment schedule calculated for you</p>
+
+        <% Else%>
+        Monthly Payment: &nbsp;<span class="bold"> <asp:Label ID="lblMonthlyPmt" runat="server"></asp:Label></span>
         
-        <asp:GridView ID="loanGridView" runat="server" />
-            
+        <br />
+        <br />
+        
+        <asp:GridView ID="loanGridView" runat="server" CssClass="cssgrindview">
+        <alternatingRowstyle Cssclass="alt" />
+        </asp:GridView>
+         <%End If%>
         </div>
     </form>
 </body>
