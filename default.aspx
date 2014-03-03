@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Loan Calculator</title>
     <link rel="stylesheet" type="text/css" href="laz.css" />
 
 </head>
@@ -12,7 +12,7 @@
     <form id="form1" runat="server">
     <div>
     
-   <h1> Mike's Massively Awesome Mortgage Calculator</h1>
+   <h1> Mortgage Calculator</h1>
         
         <br /><br />
      
